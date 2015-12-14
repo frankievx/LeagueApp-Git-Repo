@@ -1,0 +1,30 @@
+<div class="col-xs-6 col-md-4 championItem" id="champion">
+    <div class="champTopBar"> 
+        <div class="champSprite">
+            <img ng-src="img%20copy/champion/'+data[champions[i]]["image"]["full"]+'">
+        </div>
+        <div class="champName">
+            <h2>{{championStats.name}} </h2>
+        </div>
+        <div class="champTitle">
+            <h2>data[champions[i]]["title"]</h2>
+        </div> 
+    </div>
+                                
+    <div class="row" id="stats">
+        <div class="col-sm-6" id="statsLeft">
+            <p class="health"> Health: {{ data[champions[i]]["stats"]["hp"] }} (+{{data[champions[i]]["stats"]["hpperlevel"]}})</p> 
+            <p class="healthregen"> Health Regen: data[champions[i]]["stats"]["hpregen"] (+data[champions[i]]["stats"]["hpregenperlevel"])</p>
+            <p class="mana"> Mana: data[champions[i]]["stats"]["mp"](+data[champions[i]]["stats"]["mpperlevel"])</p>
+            <p class="manaregen"> Mana Regen: data[champions[i]]["stats"]["mpregen"](+data[champions[i]]["stats"]["mpregenperlevel"]+')</p>
+            <p class="movespeed"> Move Speed: data[champions[i]]["stats"]["movespeed"]</p>
+        </div>
+        <div class="col-sm-6" class="pull-left" id="statsRight">
+            <p class="armor"> Armor: data[champions[i]]["stats"]["armor"] (+data[champions[i]]["stats"]["armorperlevel"]+')</p>
+            <p class="magicresist"> Magic Resist: '+data[champions[i]]["stats"]["spellblock"](+data[champions[i]]["stats"]["spellblockperlevel"])</p>
+            <p class="attackrange"> Attack Range: '+data[champions[i]]["stats"]["attackrange"]+'</p>
+            <p class="attackdamage"> Attack Damage: '+data[champions[i]]["stats"]["attackdamage"](+data[champions[i]]["stats"]["attackdamageperlevel"])</p>  
+            <p class="attackspeed"> Attack Speed: attackspeed.toFixed(3)(+data[champions[i]]["stats"]["attackspeedperlevel"])</p>  
+        </div>
+    </div>
+</div>

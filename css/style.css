@@ -1,0 +1,167 @@
+/* Sidebar */
+
+
+#sidebar-wrapper {
+    z-index : 1;
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2C3E50;
+    opacity: 0.9;
+    
+}
+
+
+/* Main Content */
+
+#page-content-wrapper {
+    
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    
+}
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+    
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+    
+}
+
+.sidebar-nav {
+    padding: 0px;
+    list-style: none;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display:block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav li a:hover{
+    background: #16A085;
+}
+
+
+/*    Javascript created content   */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.champTopBar {
+    height: 30%;
+    width: 80%;
+    margin: 2px 2px 5px 2px !important;
+    text-align: left;
+}
+
+.champSprite {
+    float: left;
+}
+
+
+
+.champName {
+    text-decoration: underline;
+    text-align: left;
+    margin: 3px 3px 3px 3px;
+    font-size: large !important;
+}
+
+.champTitle h2 {
+    font-size: medium !important;
+    margin-top: 5px;
+    
+}
+
+#championList {
+    display:grid;
+    
+}
+
+#champion {
+    width: 30%;
+    float: left;
+    padding: 5px;
+    border: 1px solid;
+    margin: 5px 5px 5px 5px;
+
+}
+
+.stats p {
+    margin: 2px 2px 2px 2px;
+}
+.championItem {
+    min-height: 300px;
+}
+
+.champList {
+    float: left;
+    margin-left: 30%;
+    margin-right: 5%;
+}
+.search {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  position: fixed;
+  
+    
+}
+
+.champion p {
+    font-size: small;
+    margin: 1px 1px 1px 1px;
+}
+
+
+form {
+  max-width: 480px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    align-self: center;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
